@@ -1,0 +1,27 @@
+/** Variables **/
+@import 'Global/variables';
+
+/** Bootstrap Source Files **/
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+/** Global Styles, Mixins and Functions **/
+@import 'Global/mixins';
+
+/** Page Layouts **/
+@import 'Layouts/header';
+@import 'Layouts/nav';
+@import 'Layouts/sections';
+@import 'Layouts/footer';
+
+/** Pages **/
+//@import 'Pages/home';
+//@import 'Pages/services';
+//@import 'Pages/about';
+//@import 'Pages/contact';
+
+/** Modules **/
+//@import 'Modules/animations';
+@import 'Modules/utilities';
+
+/** Media queries **/
+@import 'Layout/mobile';
