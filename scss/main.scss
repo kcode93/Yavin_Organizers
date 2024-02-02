@@ -6,6 +6,7 @@
 
 /** Global Styles, Mixins and Functions **/
 @import 'Global/mixins';
+@import 'Global/base';
 
 /** Page Layouts **/
 @import 'Layouts/header';
@@ -24,4 +25,4 @@
 @import 'Modules/utilities';
 
 /** Media queries **/
-@import 'Layout/mobile';
+@import 'Layouts/mobile';
