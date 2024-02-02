@@ -1,0 +1,7 @@
+.btn-outline-secondary {
+	color: var(--bs-secondary);
+
+	&:hover {
+		color: $white;
+	}
+}
