@@ -18,6 +18,12 @@ $secondary-font: 'Roboto', sans-serif;
 
 /** Bootstrap Components **/
 
+//navbar
+//$navbar-toggler-focus-width: 1rem !default;
+$navbar-light-color: $primary !default;
+$navbar-light-icon-color: $secondary !default;
+$navbar-light-toggler-border-color: $primary !default;
+
 //Spacers
 $spacer: 1rem !default;
 $spacers: (
