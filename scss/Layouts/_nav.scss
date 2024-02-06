@@ -1,5 +1,13 @@
 #main-navbar {
+	transition: all 0.5s ease-in-out;
+
 	.navbar-toggler {
 		border: 0.15rem solid $primary !important;
 	}
+}
+
+.navbar-clear-bg {
+	background-color: $white;
+	opacity: 0.9;
+	box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
 }
