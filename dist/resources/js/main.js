@@ -16,5 +16,34 @@ function navStyleOnScroll(){
     });
 }
 
+function dropStats(){
+    //gets all counter elements
+    const counters = document.querySelectorAll('.counter');
+
+    //loops through all counter elements
+    counters.forEach((counter) => {
+        counter.innerText = 0;
+
+        //gets data-target value and dynamically increases until it matches target value
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target');
+            const counterVal = +counter.innerText;
+
+            const increment = target / 200;
+
+            if(counterVal < target){
+                counter.innerText = Math.ceil(counterVal + increment);
+                setTimeout(updateCounter, 1);
+            }else{
+                counter.innerText = target;
+            }
+        };
+
+        updateCounter();
+
+    });
+}
+
 //runs function after the page has loaded
 document.addEventListener('DOMContentLoaded', navStyleOnScroll);
+document.addEventListener('DOMContentLoaded', dropStats);
