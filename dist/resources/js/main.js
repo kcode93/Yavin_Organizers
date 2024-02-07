@@ -17,4 +17,4 @@ function navStyleOnScroll(){
 }
 
 //runs function after the page has loaded
-document.addEventListener(DOMContentLoaded, navStyleOnScroll);
+document.addEventListener('DOMContentLoaded', navStyleOnScroll);
