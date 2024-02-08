@@ -2,12 +2,15 @@
 
 // Small devices (landscape phones, less than 768px)
 @include media-breakpoint-down(sm) {
-	//Custom Styles HERE
+	//custom styles here
 }
 
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(md) {
 	#main-navbar {
+		.container {
+			max-width: 100%;
+		}
 		.navbar-nav {
 			//border: 2px solid $primary;
 			background-color: $white;
@@ -92,6 +95,12 @@
 
 	.xl-text {
 		font-size: 3.125rem;
+	}
+
+	.details-2 {
+		.img-container {
+			//margin-top: 3rem !important;
+		}
 	}
 }
 
