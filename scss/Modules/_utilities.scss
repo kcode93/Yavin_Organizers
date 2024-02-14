@@ -9,3 +9,35 @@
 .xl-text {
 	font-size: 4.6875rem;
 }
+
+.to-top-btn {
+	position: fixed;
+	z-index: 20;
+	bottom: 1.25rem;
+	right: 1.25rem;
+	width: 3.25rem;
+	height: 3.25rem;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	background-color: $primary;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+
+	&:hover {
+		background-color: darken($primary, 7);
+		.to-top-btn-arrow {
+			transform: translate(0, -0.5rem);
+		}
+	}
+
+	.to-top-btn-arrow {
+		transition: all 0.5s ease-in-out;
+		margin-bottom: 0.2rem;
+	}
+}
+
+.show {
+	opacity: 1;
+}

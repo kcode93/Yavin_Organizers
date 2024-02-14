@@ -2,15 +2,18 @@
 function navStyleOnScroll(){
     //targets HTML element
     const navbar = document.querySelector('#main-navbar');
+    const toTopBtn = document.querySelector('#to-top');
 
     window.addEventListener('scroll', () => {
         if(window.scrollY > 50){
             //adds background & shadow
             navbar.classList.add('navbar-clear-bg');
+            toTopBtn.classList.add('show');
             //navbar.classList.add('shadow');
         }else{
             //removes background & shadow
             navbar.classList.remove('navbar-clear-bg');
+            toTopBtn.classList.remove('show');
             //navbar.classList.remove('shadow');
         }
     });
@@ -44,6 +47,16 @@ function dropStats(){
     });
 }
 
+function scrollToTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+
 //runs function after the page has loaded
 document.addEventListener('DOMContentLoaded', navStyleOnScroll);
 document.addEventListener('DOMContentLoaded', dropStats);
+
+//Event Listeners
+document.querySelector('#to-top').addEventListener('click', scrollToTop);
